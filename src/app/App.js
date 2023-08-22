@@ -1,8 +1,8 @@
-import Navbar from "../components/Navbar";
+import Navbar from "components/Navbar";
 import { Route, Routes } from "react-router-dom";
-import HomePage from "../pages/HomePage";
-import ApparelsPage from "../pages/ApparelPage";
-import CollectiblesPage from "../pages/HomePage";
+import HomePage from "pages/HomePage";
+import ApparelsPage from "pages/ApparelPage";
+import CollectiblesPage from "pages/HomePage";
 
 function App() {
   return (
@@ -10,8 +10,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/register" element={<ApparelsPage />} />
-        <Route path="/expenses" element={<CollectiblesPage />} />
+        <Route path="/apparel" element={<ApparelsPage />} />
+        <Route path="/collectibles" element={<CollectiblesPage />} />
       </Routes>
     </>
   );
