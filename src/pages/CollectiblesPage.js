@@ -7,70 +7,70 @@ const CollectiblesPage = () => {
     {
       name: "Funko Pop! Kiriko",
       description: "Funko Pop! Overwatch Kiriko Figurine",
-      price: "1000",
+      price: 1000,
       image:
         "https://m.media-amazon.com/images/I/716ASfk5ocL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
     },
     {
       name: "Funko Pop! Kiriko",
       description: "Funko Pop! Overwatch Kiriko Figurine",
-      price: "1000",
+      price: 1000,
       image:
         "https://m.media-amazon.com/images/I/716ASfk5ocL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
     },
     {
       name: "Funko Pop! Kiriko",
       description: "Funko Pop! Overwatch Kiriko Figurine",
-      price: "1000",
+      price: 1000,
       image:
         "https://m.media-amazon.com/images/I/716ASfk5ocL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
     },
     {
       name: "Funko Pop! Kiriko",
       description: "Funko Pop! Overwatch Kiriko Figurine",
-      price: "1000",
+      price: 1000,
       image:
         "https://m.media-amazon.com/images/I/716ASfk5ocL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
     },
     {
       name: "Funko Pop! Kiriko",
       description: "Funko Pop! Overwatch Kiriko Figurine",
-      price: "1000",
+      price: 1000,
       image:
         "https://m.media-amazon.com/images/I/716ASfk5ocL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
     },
     {
       name: "Funko Pop! Kiriko",
       description: "Funko Pop! Overwatch Kiriko Figurine",
-      price: "1000",
+      price: 1000,
       image:
         "https://m.media-amazon.com/images/I/716ASfk5ocL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
     },
     {
       name: "Funko Pop! Kiriko",
       description: "Funko Pop! Overwatch Kiriko Figurine",
-      price: "1000",
+      price: 1000,
       image:
         "https://m.media-amazon.com/images/I/716ASfk5ocL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
     },
     {
       name: "Funko Pop! Kiriko",
       description: "Funko Pop! Overwatch Kiriko Figurine",
-      price: "1000",
+      price: 1000,
       image:
         "https://m.media-amazon.com/images/I/716ASfk5ocL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
     },
     {
       name: "Funko Pop! Kiriko",
       description: "Funko Pop! Overwatch Kiriko Figurine",
-      price: "1000",
+      price: 1000,
       image:
         "https://m.media-amazon.com/images/I/716ASfk5ocL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
     },
     {
       name: "Funko Pop! Kiriko",
       description: "Funko Pop! Overwatch Kiriko Figurine",
-      price: "1000",
+      price: 1000,
       image:
         "https://m.media-amazon.com/images/I/716ASfk5ocL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
     },
