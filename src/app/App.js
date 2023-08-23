@@ -2,7 +2,7 @@ import Navbar from "components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "pages/HomePage";
 import ApparelsPage from "pages/ApparelPage";
-import CollectiblesPage from "pages/HomePage";
+import CollectiblesPage from "pages/CollectiblesPage";
 
 function App() {
   return (

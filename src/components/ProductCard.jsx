@@ -1,14 +1,14 @@
 import { Button, Card } from 'react-bootstrap';
 
-const ProductCard = (props) => {
+const ProductCard = ({ props }) => {
   return (
-    <Card className="m-3" style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+    <Card className="m-2" style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={props.image} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>{props.name}</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          {props.description}
+          {props.price}
         </Card.Text>
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
