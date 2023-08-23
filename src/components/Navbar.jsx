@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom";
+import CartModal from "./CartModal";
+
 import styles from "./navbar.module.css";
 
 function Navbar() {
@@ -27,9 +29,7 @@ function Navbar() {
         </li>
         <ul className="navbar-nav justify-content-end">
           <li className="nav-item">
-            <NavLink className="nav-link" to="#">
-              Cart
-            </NavLink>
+            <CartModal />
           </li>
         </ul>
       </div>

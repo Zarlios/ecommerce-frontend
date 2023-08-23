@@ -81,7 +81,7 @@ const CollectiblesPage = () => {
       <Row xs={1} md={5} className="g-6">
         {collectibles.map((collectible, idx) => (
           <Col key={idx}>
-            <ProductCard props={collectible} />
+            <ProductCard item={collectible} />
           </Col>
         ))}
       </Row>

@@ -60,7 +60,7 @@ const ApparelsPage = () => {
       <Row xs={1} md={5} className="g-6">
         {apparels.map((apparel, idx) => (
           <Col key={idx}>
-            <ProductCard props={apparel} />
+            <ProductCard item={apparel} />
           </Col>
         ))}
       </Row>

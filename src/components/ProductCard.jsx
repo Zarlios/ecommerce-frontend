@@ -1,19 +1,25 @@
-import { Button, Card } from 'react-bootstrap';
+import { Button, Card } from "react-bootstrap";
 
-const ProductCard = ({ props }) => {
+const ProductCard = (props) => {
+  const { item } = props;
+  const { image, name, description, price } = item;
   return (
-    <Card className="m-2" style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={props.image} />
+    <Card className="m-2" style={{ width: "18rem" }}>
+      <Card.Img variant="top" src={image} />
       <Card.Body>
-        <Card.Title>{props.name}</Card.Title>
+        <Card.Title>{name}</Card.Title>
         <Card.Text>
-          {props.description}
-          {props.price}
+          <p>{description}</p>
+          <p className="d-flex justify-content-end fw-bold">${price}</p>
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <div className="d-flex justify-content-center">
+          <Button variant="primary">
+            Add to cart
+          </Button>
+        </div>
       </Card.Body>
     </Card>
   );
-}
+};
 
 export default ProductCard;
