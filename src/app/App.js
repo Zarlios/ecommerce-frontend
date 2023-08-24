@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from "pages/HomePage";
 import ApparelsPage from "pages/ApparelPage";
 import CollectiblesPage from "pages/CollectiblesPage";
+import Footer from "components/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/apparel" element={<ApparelsPage />} />
         <Route path="/collectibles" element={<CollectiblesPage />} />
       </Routes>
+      <Footer />
     </>
   );
 }

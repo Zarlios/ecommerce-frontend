@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { addToCart } from "features/item/itemSlice";
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 
 import { Button, Card } from "react-bootstrap";
 
@@ -20,7 +20,13 @@ const ProductCard = (props) => {
 
   return (
     <Card className="m-2" style={{ width: "18rem" }}>
-      <Card.Img variant="top" src={image} />
+      <div className="d-flex justify-content-center p-2" style={{ height: "24rem"}}>
+        <Card.Img
+          variant="top"
+          src={image}
+          className="object-fit-contain"
+        />
+      </div>
       <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Text>
