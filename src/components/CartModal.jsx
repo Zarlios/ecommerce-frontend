@@ -4,7 +4,7 @@ import { Button, Modal } from "react-bootstrap";
 
 import { removeFromCart } from "features/item/itemSlice";
 
-import "./cart.module.css";
+import "./cartModal.css";
 
 const CartModal = () => {
   const [show, setShow] = useState(false);
@@ -47,14 +47,19 @@ const CartModal = () => {
                   {item.name} - ${item.price}
                 </div>
                 <div>
-                  <Button variant="dark" onClick={() => handleRemoveFromCart(item.id)}>
+                  <Button
+                    variant="dark"
+                    onClick={() => handleRemoveFromCart(item.id)}
+                  >
                     <i className="fa-solid fa-trash-can"></i>
                   </Button>
                 </div>
               </li>
             ))}
           </ul>
-          <div className="total justify-content-end">Total: ${total.toFixed(2)}</div>
+          <div className="total d-flex justify-content-end">
+            <p className="mx-2 fw-bold">Total:</p> <p>{`$${total.toFixed(2)}`}</p>
+          </div>
           <Button variant="dark">Check Out</Button>
         </Modal.Body>
       </Modal>
