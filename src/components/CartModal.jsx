@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Button, Modal } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 import { removeFromCart } from "features/item/itemSlice";
 
@@ -60,7 +61,7 @@ const CartModal = () => {
           <div className="total d-flex justify-content-end">
             <p className="mx-2 fw-bold">Total:</p> <p>{`$${total.toFixed(2)}`}</p>
           </div>
-          <Button variant="dark">Check Out</Button>
+          <NavLink to="/checkout" onClick={() => setShow(false)}>Check Out</NavLink>
         </Modal.Body>
       </Modal>
     </>
