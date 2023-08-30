@@ -10,7 +10,7 @@ const HomePage = () => {
   };
 
   return (
-    <Carousel data-bs-theme="dark" activeIndex={index} onSelect={handleSelect}>
+    <Carousel variant="light" activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item className="text-center">
         <img src={ExampleCarouselImage} text="First slide" />
         <Carousel.Caption>

@@ -1,42 +1,29 @@
 import React from "react";
-import { useDispatch } from "react-redux";
-import { addToCart } from "features/item/itemSlice";
-import { v4 as uuidv4 } from "uuid";
 
-import { Button, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
+import ItemModal from "./ItemModal";
 
-const ProductCard = (props) => {
-  let { item } = props;
-  const { image, name, description, price } = item;
+import styles from "./productCard.module.css";
 
-  let id = uuidv4();
-  item = { id, image, name, description, price };
-
-  const dispatch = useDispatch();
-
-  const handleAddToCart = () => {
-    dispatch(addToCart(item));
-  };
+const ProductCard = ({ item }) => {
+  const { id, image, name, description, price } = item;
 
   return (
-    <Card className="m-2" style={{ width: "18rem" }}>
-      <div className="d-flex justify-content-center p-2" style={{ height: "24rem"}}>
-        <Card.Img
-          variant="top"
-          src={image}
-          className="object-fit-contain"
-        />
+    <Card className={`m-2 ${styles.card}`} style={{ width: "18rem" }}>
+      <div
+        className="d-flex justify-content-center p-2"
+        style={{ height: "24rem" }}
+      >
+        <Card.Img variant="top" src={image} className="object-fit-contain" />
       </div>
       <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Text>
-          <p>{description}</p>
-          <p className="d-flex justify-content-end fw-bold">${price}</p>
+          {description}
+          <div className="d-flex justify-content-end fw-bold">${price.toFixed(2)}</div>
         </Card.Text>
         <div className="d-flex justify-content-center">
-          <Button variant="primary" onClick={handleAddToCart}>
-            Add to cart
-          </Button>
+          <ItemModal item={item} />
         </div>
       </Card.Body>
     </Card>

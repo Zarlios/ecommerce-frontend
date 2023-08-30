@@ -6,32 +6,31 @@ import styles from "./navbar.module.css";
 function Navbar() {
   return (
     <nav
-      className="navbar bg-dark border-bottom border-body"
-      data-bs-theme="dark"
+      className={`navbar border-bottom border-body ${styles.navbar}`}
     >
       <div className="container-fluid">
-        <ul className="navbar-nav d-flex flex-row justify-content-start">
-          <li className="nav-item mx-3">
+        <div className="navbar-nav d-flex flex-row justify-content-start">
+          <div className="nav-item mx-3">
             <NavLink className="nav-link" to="/apparel">
               Apparel
             </NavLink>
-          </li>
-          <li className="nav-item mx-3">
+          </div>
+          <div className="nav-item mx-3">
             <NavLink className="nav-link" to="/collectibles">
               Collectibles
             </NavLink>
-          </li>
-        </ul>
-        <li className="nav-item justify-content-center">
+          </div>
+        </div>
+        <div className="nav-item justify-content-center">
           <NavLink className="navbar-brand" to="/">
             Matt's Video Game Shop
           </NavLink>
-        </li>
-        <ul className="navbar-nav justify-content-end">
-          <li className="nav-item">
+        </div>
+        <div className="navbar-nav justify-content-end">
+          <div className="nav-item">
             <CartModal />
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </nav>
   );

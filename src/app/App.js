@@ -8,6 +8,9 @@ import HomePage from "pages/HomePage";
 import ApparelsPage from "pages/ApparelPage";
 import CollectiblesPage from "pages/CollectiblesPage";
 import CheckoutPage from "pages/CheckoutPage";
+import PaymentPage from "pages/PaymentPage";
+
+import "./app.css";
 
 function App() {
   return (
@@ -18,6 +21,7 @@ function App() {
         <Route path="/apparel" element={<ApparelsPage />} />
         <Route path="/collectibles" element={<CollectiblesPage />} />
         <Route path="/checkout" element={<CheckoutPage />} />
+        <Route path="/payment-complete" element={<PaymentPage />} />
       </Routes>
       <Footer />
     </>

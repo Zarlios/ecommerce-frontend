@@ -2,9 +2,11 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 
+import styles from "./footer.module.css"
+
 function Footer() {
   return (
-    <footer className="bg-dark border-bottom border-body text-white" data-bs-theme="dark">
+    <footer className={`border-top border-body ${styles.footer}`}>
       <Container fluid className="p-5">
         <div className="text-lg-start">
           <Row>
