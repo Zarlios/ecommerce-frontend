@@ -33,7 +33,7 @@ const CheckoutPage = () => {
         .then((res) => res.json())
         .then((data) => setClientSecret(data.clientSecret));
     }
-  }, []);
+  }, [cartItems]);
 
   const appearance = {
     theme: "stripe",
