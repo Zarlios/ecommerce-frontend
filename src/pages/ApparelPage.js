@@ -8,7 +8,7 @@ const ApparelsPage = () => {
   const [apparels, setApparel] = useState([]);
 
   React.useEffect(() => {
-    axios.get("http://localhost:4242/apparel").then((results) => {
+    axios.get("https://ecommerce-backend-iulr.onrender.com/apparel").then((results) => {
       const data = results.data;
 
       setApparel(data);

@@ -7,7 +7,7 @@ import ProductCard from "components/ProductCard";
 const CollectiblesPage = () => {
   const [collectibles, setCollectibles] = useState([]);
   React.useEffect(() => {
-    axios.get("http://localhost:4242/collectibles").then((results) => {
+    axios.get("https://ecommerce-backend-iulr.onrender.com/collectibles").then((results) => {
       const data = results.data;
 
       setCollectibles(data);
