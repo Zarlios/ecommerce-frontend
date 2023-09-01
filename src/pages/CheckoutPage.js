@@ -27,8 +27,7 @@ const CheckoutPage = () => {
     if (cartItems) {
       // Create PaymentIntent as soon as the page loads
       axios.post("https://ecommerce-backend-iulr.onrender.com/create-payment-intent", cartItems)
-        .then((res) => res.json())
-        .then((data) => setClientSecret(data.clientSecret));
+        .then((response) => setClientSecret(response.data.clientSecret));
     }
   }, [cartItems]);
 
