@@ -8,6 +8,7 @@ import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 
 import CheckoutForm from "../components/CheckoutForm";
+import axios from "axios";
 
 const stripePromise = loadStripe(
   "pk_test_51Nj22eGhiPUUAYmAktieLrNWwUcz4Lcte2bqVxLWkk2VPwCuqO0PDrZy4heiH9BLZEwnpaHdoh9ar2RuRMcbguTL00K5aHZaCJ"
@@ -25,11 +26,7 @@ const CheckoutPage = () => {
   useEffect(() => {
     if (cartItems) {
       // Create PaymentIntent as soon as the page loads
-      fetch("https://ecommerce-backend-iulr.onrender.com/create-payment-intent", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: cartItems,
-      })
+      axios.post("https://ecommerce-backend-iulr.onrender.com/create-payment-intent", cartItems)
         .then((res) => res.json())
         .then((data) => setClientSecret(data.clientSecret));
     }
