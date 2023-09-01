@@ -28,7 +28,7 @@ const CheckoutPage = () => {
       fetch("https://ecommerce-backend-iulr.onrender.com/create-payment-intent", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(cartItems),
+        body: cartItems,
       })
         .then((res) => res.json())
         .then((data) => setClientSecret(data.clientSecret));
